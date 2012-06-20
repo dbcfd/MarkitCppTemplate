@@ -1,5 +1,5 @@
-set (TARGET ModuleA)
-add_definitions(-DMODULE_A_BUILD)
+set (TARGET ModuleB)
+add_definitions(-DMODULE_B_BUILD)
 
 file(GLOB HEADERS "*.h")
 
