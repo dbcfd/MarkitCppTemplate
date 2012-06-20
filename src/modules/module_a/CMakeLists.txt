@@ -5,6 +5,10 @@ file(GLOB HEADERS "*.h")
 
 file(GLOB SOURCES "*.cpp")
 
+find_package(SomeMarkitLibrary REQUIRED)
+
+set(DEPENDENCIES ${DEPENDENCIES} SomeMarkitLibrary_LIBRARIES)
+
 add_library (${TARGET} SHARED ${HEADERS} ${SOURCES}) 
 target_link_libraries (${TARGET} ${DEPENDENCIES})
 
