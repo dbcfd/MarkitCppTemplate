@@ -1,0 +1,6 @@
+#ignore everything
+*
+#except
+!CMakeLists.txt
+!.gitignore
+!gtest-1.6.0
