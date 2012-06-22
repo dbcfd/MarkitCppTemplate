@@ -8,8 +8,7 @@ if(UNIX)
 	set(DEPENDENCIES rt)
 endif()	
 
-set(gtest_dir ${BASE_DIRECTORY}/thirdparty/gtest-1.6.0/include)
-include_directories(${gtest_dir})
+find_package(gtest REQUIRED)
 
 SET (DEPENDENCIES ${DEPENDENCIES} ModuleB gtest)
 

@@ -25,7 +25,10 @@ include(SetVSTargetProperties)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/modules)
 set(BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+set(THIRDPARTY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty)
 
 add_subdirectory(src)
 add_subdirectory(thirdparty)
+
+set(gtest_VERSION 1.6.0)
 add_subdirectory(test)

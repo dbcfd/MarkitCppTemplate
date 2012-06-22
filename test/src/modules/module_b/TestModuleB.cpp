@@ -1,17 +1,14 @@
-#include <thread>
-#include <chrono>
-
-#include "module_a/ClassA.h"
+#include "module_b/ClassB.h"
 
 #pragma warning(disable:4251)
 #include <gtest/gtest.h>
 
-TEST(TCP_TEST, TEST_CONNECTIONS)
+TEST(MODULEA_TEST, TEST_SIMPLE_FUNCTION)
 {
    using namespace markit::module_b;
 
-   ClassA testObject;
+   ClassB testObject;
    
-   EXPECT_TRUE(testObject.functionReturningTrue(1);
+   EXPECT_TRUE(testObject.functionReturningTrue(1));
    EXPECT_FALSE(testObject.functionReturningTrue(-1));
 }

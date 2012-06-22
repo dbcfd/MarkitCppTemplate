@@ -6,7 +6,7 @@ int main(int argc, char** argv)
 	using namespace markit;
 	
 	module_a::ClassA objA;
-	modula_b::ClassB objB;
+	module_b::ClassB objB;
 	
 	return 0;
 }

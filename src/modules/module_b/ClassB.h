@@ -7,7 +7,7 @@ namespace markit
 namespace module_b
 {
 
-class MODULE_B_API ClassB
+class MODULE_B_API ClassB {
 public:
 	ClassB();
 	~ClassB();

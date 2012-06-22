@@ -5,9 +5,10 @@ file(GLOB HEADERS "*.h")
 
 file(GLOB SOURCES "*.cpp")
 
-find_package(SomeMarkitLibrary REQUIRED)
+set(DCL_VERSION 8.1.2)
+find_package(DCL REQUIRED)
 
-set(DEPENDENCIES ${DEPENDENCIES} SomeMarkitLibrary_LIBRARIES)
+set(DEPENDENCIES ${DEPENDENCIES} ${DCL_LIBRARIES})
 
 add_library (${TARGET} SHARED ${HEADERS} ${SOURCES}) 
 target_link_libraries (${TARGET} ${DEPENDENCIES})
